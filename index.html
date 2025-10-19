@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Bar - Premium Makeup Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Beauty Bar</h1>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#products" class="nav-link">Products</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <a href="#" class="btn btn-outline">Log in</a>
+                    <a href="#" class="btn btn-primary">Sign Up</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <img src="animImages/slide1.jpeg" alt="Beauty Products 1">
+                </div>
+                <div class="slide fade">
+                    <img src="animImages/slide2.jpeg" alt="Beauty Products 2">
+                </div>
+                <div class="slide fade">
+                    <img src="animImages/slide3.jpeg" alt="Beauty Products 3">
+                </div>
+                <div class="slide fade">
+                    <img src="animImages/slide4.jpeg" alt="Beauty Products 4">
+                </div>
+                <div class="slide fade">
+                    <img src="animImages/slide5.png" alt="Beauty Products 5">
+                </div>
+                <div class="slide fade">
+                    <img src="animImages/slide6.png" alt="Beauty Products 6">
+                </div>
+                
+                <!-- Navigation area -->
+                <div class="dots-container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+            </div>
+            
+            
+            <div class="discount-banner">
+                <div class="discount-content">
+                    <h2 class="discount-title">Get <span class="highlight">50%</span> off when you shop on our mobile app</h2>
+                    <p class="discount-subtitle">Download our app and enjoy exclusive discounts</p>
+                    <div class="app-buttons">
+                        <a href="#" class="app-btn">
+                            <i class="fab fa-apple"></i>
+                            <span>Download for iOS</span>
+                        </a>
+                        <a href="#" class="app-btn">
+                            <i class="fab fa-google-play"></i>
+                            <span>Download for Android</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories -->
+        <section id="products" class="categories-section">
+            <div class="container">
+                <h2 class="section-title">Shop by Category</h2>
+                <div class="categories-grid">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Makeup</h3>
+                        <p>Discover our premium makeup collection</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <h3>Skincare</h3>
+                        <p>Nurture your skin with our skincare range</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-cut"></i>
+                        </div>
+                        <h3>Haircare</h3>
+                        <p>Transform your hair with quality products</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-hand-paper"></i>
+                        </div>
+                        <h3>Nails</h3>
+                        <p>Perfect your manicure and pedicure</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>Eye Lashes</h3>
+                        <p>Enhance your natural beauty</p>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-spray-can"></i>
+                        </div>
+                        <h3>Fragrance</h3>
+                        <p>Find your signature scent</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="featured-products">
+            <div class="container">
+                <h2 class="section-title">Top Products</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="animImages/slide1.jpeg" alt="Featured Product 1">
+                        </div>
+                        <div class="product-info">
+                            <h3>Premium Foundation</h3>
+                            <p class="price">$29.99</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="animImages/slide2.jpeg" alt="Featured Product 2">
+                        </div>
+                        <div class="product-info">
+                            <h3>Luxury Lipstick</h3>
+                            <p class="price">$19.99</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="animImages/slide3.jpeg" alt="Featured Product 3">
+                        </div>
+                        <div class="product-info">
+                            <h3>Eye Shadow Palette</h3>
+                            <p class="price">$34.99</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Features</h3>
+                    <ul class="features-list">
+                        <li><i class="fas fa-shipping-fast"></i> Worldwide delivery</li>
+                        <li><i class="fas fa-shield-alt"></i> Secure payment</li>
+                        <li><i class="fas fa-certificate"></i> 100% genuine and safe products</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-snapchat"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Legal Information</h3>
+                    <ul class="legal-links">
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Join our newsletter for exclusive offers</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="example@email.com" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="newsletter-consent" name="newsletter-consent">
+                        <label for="newsletter-consent">I agree to receive marketing communications</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Beauty Bar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
